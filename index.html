@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Happy Birthday</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      left: -43.4%;
+      top: 50%;
+      width: 100vw;
+      overflow-y: hidden;
+      box-sizing: border-box;
+      margin: 0;
+      padding-top: 40rem;
+    }
+
+    .card {
+      width: 85%;
+      max-width: 400px; /* Adjust max-width based on your design */
+      margin: 0 auto;
+      text-align: center;
+      overflow: hidden;
+      border: 2px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .content {
+      padding: 20px;
+    }
+
+    .birthday {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<body>
+  <label for="open">
+    <input id="open" type="checkbox"/>
+    <div class="card pg1">
+      <div class="h">Happy</div>
+      <div class="bd">Birthday</div>
+      <div class="click">Click To Open</div>
+    </div>
+    <div class="card pg2"> 
+      <div class="content"><img class="birthday" src="https://images.all-free-download.com/images/graphicthumb/best_happy_birthday_design_elements_vector_set_524004.jpg"/></div>
+    </div>
+    <div class="card pg3">
+      <div class="content">
+        <div class="wish">
+          Assalamu-walimum,
+          <br>
+          Wishing you a very Happy Birthday, Jiya Khan 🙂!!!!
+          <br><br>"May your birthday be adorned with the timeless melody of love, harmonizing the chords of joy, laughter, and shared dreams. Happy Birthday, my love, a symphony of affection that grows richer with every passing moment.😘😘😘"
+          <br> <br>Zeeshan Raza
+        </div>
+      </div>
+    </div>
+  </label>
+  
+  <script>
+    const audio = new Audio('./videoplayback.mp3')
+    const open = document.getElementById('open');
+    open.addEventListener('change',function(){
+     audio.play();
+    })
+  </script>
+</body>
+</html>
